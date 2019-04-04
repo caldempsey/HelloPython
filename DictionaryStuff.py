@@ -1,9 +1,10 @@
 /**
-Filtering things
+Aggregate key values for keys in a list of dicts
 **/
 
 def aggregate_key_values(dict_list: list, keys: list):
     return {k: sum(d.get(k, 0) for d in dict_list) for k in keys}
+
 
 
 /** 
@@ -36,4 +37,4 @@ You want to say "Give me an aggregate of all dict values for dogs named fido, bu
 u can do that with this c:
 **/
 def aggregate_key_values_at_filter(dict_list: list, keys: list, filter: list):
-    return {k: sum(d.get(k, 0) for d in dict_list) for k in keys if filter in d.values()}
+    return {k: sum(d.get(k, 0) for d in dict_list if any(f in d.values() for f in filter)) for k in keys}
