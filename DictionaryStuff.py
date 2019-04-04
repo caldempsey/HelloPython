@@ -10,25 +10,6 @@ def aggregate_key_values(dict_list: list, keys: list):
 
 Lets say you have some values
 
-[{
-legs: 2
-paws: 4
-name: fido
-},
-{
-legs: 2
-paws: 2
-name: fido
-},
-{
-legs: 2
-paws: 4
-name: fred
-}]
-```
-Then with
-with 
-```
 dict_list  = [{
 legs: 2
 paws: 4
