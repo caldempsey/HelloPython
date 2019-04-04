@@ -24,7 +24,7 @@ dict_list  = [
     {
     'legs': 2,
     'paws': 2,
-    'name': 'fido'
+    'name': 'freddie'
     }
 ]
 keys = ['legs', 'paws']
