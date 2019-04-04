@@ -1,2 +1,2 @@
-# HelpfulPythonFunctionsIWrote
+# HelloPython
 Dumpster for helpful python functions 
